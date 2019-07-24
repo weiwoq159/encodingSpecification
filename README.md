@@ -200,7 +200,8 @@ var funName = function(arg1, arg2) {
 
 - 变量名应由 26 个大小写字母（A..Z，a..z），10 个数字（0..9），和“\_”（下划线）组成。
 - 首字母小写 驼峰式命名
-- 私有方法以\_开始
+- 私有方法以 <font color='red'>\_</font> 开始
+- 全局方法以 <font color='red'>\$</font> 开始
 - 构造函数 首字母大写 驼峰式命名
   动词 | 含义 | 返回
   :-: | :-: | :-:
@@ -213,9 +214,6 @@ var funName = function(arg1, arg2) {
 - 特殊情况
 
 ```javascript
-// 'ID'在变量名中全大写
-var goodID
-
 // 'URL'在变量名中全大写
 var reportURL
 
@@ -255,6 +253,7 @@ var iOSVersion
 13、不要在循环内部声明函数；
 
 4.3 vue 风格
+
 1、prop 定义尽量详细
 
 ```javascript
@@ -267,6 +266,7 @@ props: {
 ```
 
 2、 避免 v-if 和 v-for 用在一起
+
 3、 生命周期函数按照加载顺序 置于下方
 
 ```javascript
@@ -284,7 +284,7 @@ export default {
   computed: {},
   watch: {},
   methods: {},
-  beforeCreat() {},
+  beforeCreate() {},
   created() {},
   beforeMount() {},
   mounted() {}
